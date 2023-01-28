@@ -1,0 +1,32 @@
+.navbar{
+    box-shadow: 2px 2px 5px #222;
+    opacity: .9;
+}
+
+.navbar  .navbar-nav .nav-item{
+    color : #000000;  
+}
+
+.main-header{
+    position: relative;
+    background: url(../img/datacenter.jpg);
+    background-size: cover;
+    min-height: 500px;
+}
+
+.background-overlay{
+    position: absolute;
+    background: rgba(71, 71, 135,.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-control, btn{
+    border-radius: 0;
+}
+
+.team, footer{
+    background: rgba(71, 71, 135,.8);
+}
