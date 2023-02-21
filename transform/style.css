@@ -1,0 +1,104 @@
+
+
+.stat-figure {
+  font-size: 1em;
+  display: flex;
+  font-weight: bold;
+}
+
+:root {
+  --color-background: black;
+  --color-text: #f6fde1;
+  --color-accent: #faff98;
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr);
+  --content: min(30em, 100% - var(--gap) * 2);
+  --popout: minmax(0, 3rem);
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+}
+
+/* Forced reset */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: clamp(1.125rem, 0.625vw + 0.875rem, 1.625rem);
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-accent);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-reverse {
+  padding: 3ch;
+  background-color: var(--color-text);
+  color: var(--color-background);
+  border-radius: 2ch;
+}
+
+/* Simple grid with popout */
+.grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [popout-start] var(--popout)
+    [content-start] var(--content) [content-end]
+    var(--popout) [popout-end]
+    var(--full) [full-end];
+}
+
+.grid > * {
+  grid-column: content;
+}
+
+.popout {
+  grid-column: popout;
+}
+
+.flow > * + * {
+  margin-top: var(--flow, 1em)
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 2ch;
+}
+
+.mb-10vh {
+  margin-bottom: 10vh;
+}
+
+.panel {
+  width: 200px;
+  height: 200px;
+  background: #a2a;
+  font-size: 52.5px;
+  line-height: 1.28;
+  transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+  transition: 800ms;
+}
+
+.ui {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  border-bottom: 2px #fff solid;
+  width: 70px;
+  font-family: inherit;
+  font-size: 30px;
+}
