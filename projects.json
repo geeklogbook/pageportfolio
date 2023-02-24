@@ -1,8 +1,8 @@
 [
     {"id": "01", "name": "avalon", "location": "avalon", "image": ""},
-    {"id": "02", "name": "Grannys Cakes", "location": "grannys-cakes", "image": ""}
-    {"id": "03", "name": "legal It", "location": "legal-it", "image": ""}
-    {"id": "04", "name": "The garden of Words", "location": "the-garden-of-words", "image": ""}
-    {"id": "05", "name": "Transform", "location": "transform", "image": ""}
+    {"id": "02", "name": "Grannys Cakes", "location": "grannys-cakes", "image": ""},
+    {"id": "03", "name": "legal It", "location": "legal-it", "image": ""},
+    {"id": "04", "name": "The garden of Words", "location": "the-garden-of-words", "image": ""},
+    {"id": "05", "name": "Transform", "location": "transform", "image": ""},
     {"id": "06", "name": "Trendy", "location": "trendy", "image": ""}
 ]
