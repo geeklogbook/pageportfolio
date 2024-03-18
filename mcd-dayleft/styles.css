@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.task {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    font-weight: bold;
+}
+
+.red {
+    background-color: #ffcccc;
+}
+
+.yellow {
+    background-color: #ffffcc;
+}
+
+.green {
+    background-color: #ccffcc;
+}
